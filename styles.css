@@ -1,0 +1,248 @@
+/* Estilos Básicos */
+* {
+    box-sizing: border-box; /* Define que o tamanho da caixa inclui padding e border */
+  }
+  
+  /* Estilos para a página inteira */
+  body {
+    font-family: "Volvo Novum Regular";
+    margin: 0;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #fafafa; /* Fundo cinza claro */
+    padding: 16px 24px; /* Espaçamento interno */
+  }
+  
+  .logo {
+    display: flex; /* Define o elemento como flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+  
+  .logo img {
+    width: 104px;
+    height: 8px; /* Define a altura da logo */
+  }
+  
+  nav {
+    display: flex; /* Define o elemento como flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0px 0px 8px; /* Remove o padding padrão */
+    display: flex; /* Define o elemento como flexbox */
+  }
+  
+  nav li {
+    margin-right: 24px; /* Define a margem direita dos itens da lista */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove a decoração de texto padrão */
+    color: #2a609d; /* Cor do texto azul */
+    font-weight: 500; /* Fonte semi-negrito */
+  }
+  
+  /* Estilos para o banner */
+  .banner {
+    /* ... outros estilos ... */
+    background-image: url("video/Volvo-car\ \(video-converter.com\).mp4"); /* Substitua "seu-video.mp4" pelo caminho do seu vídeo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 815px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os elementos na vertical */
+    align-items: center; /* Centraliza os elementos na horizontal */
+    color: #fff; /* Cor do texto branco */
+    text-align: center;
+    padding: 5px;
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o vídeo */
+}
+
+       /* Estilos para o vídeo */
+       .banner video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute; /* Posicionamento absoluto para sobrepor o fundo */
+        top: 0;
+        left: 0;
+        z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+    }
+
+    .banner {
+        position: relative; /* Necessário para o posicionamento dos elementos */
+        width: 100%; /* Define a largura do banner */
+        height: 815px; /* Define a altura do banner */
+        overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o banner */
+    }
+
+    .banner-content {
+        /* Estilo do conteúdo do banner */
+        position: absolute; /* Posiciona o conteúdo absolutamente */
+        top: 50%; /* Centraliza o conteúdo verticalmente */
+        left: 50%; /* Centraliza o conteúdo horizontalmente */
+        transform: translate(-50%, -50%); /* Realiza o ajuste fino da centralização */
+        text-align: center; /* Centraliza o texto */
+        color: white; /* Define a cor do texto */
+        z-index: 1; /* Coloca o conteúdo acima do vídeo */
+        display: flex; /* Define o container como flexbox */
+        flex-direction: column; /* Empilha os elementos verticalmente */
+    }
+
+    .banner h2 {
+        font-size: 2rem; /* Tamanho da fonte */
+        margin-bottom: 10px;
+    }
+
+    .banner h1 {
+        font-size: 3rem; /* Tamanho da fonte */
+        margin-bottom: 20px; /* Define a margem inferior */
+        margin-top: 1px;
+        font-weight: bold; /* Deixa o texto em negrito */
+    }
+
+    .banner-container {
+        /* Estilo do container dos botões */
+        display: flex;
+        margin-top: 6px; 
+        gap: 16px; /* Espaçamento entre os botões */
+    }
+
+    .saiba-mais, .configure {
+        /* Estilo dos botões */
+        background-color: rgba(255, 255, 255, 1); /* Cor de fundo branco */
+        color: black; /* Cor do texto preto */
+        padding: 12px 32px; /* Espaçamento interno */
+        border: none; /* Remove a borda */
+        border-radius: 4px; /* Define o raio da borda */
+        font-size: 18px; /* Tamanho da fonte */
+        line-height: 24px;
+        cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse */
+        font-weight: bold;
+        transition: background-color 0.3s ease; /*Transição de cor*/
+    }
+
+    .saiba-mais:hover {
+        background-color: rgba(255, 255, 255, 0.64); /* Opacidade de 64% */
+    }
+
+    .configure {
+        background-color: transparent; /* Cor de fundo transparente */
+        color: white; /* Cor do texto branco */
+        border: 2px solid white; /* Borda branca */
+        transition: background-color 0.3s ease, color 0.3s ease; /*Transição de cor*/
+    }
+
+    .configure:hover {
+        background-color: white;
+        color: black;
+    }
+  
+  /* Estilos para a seção de carros */
+  .carros {
+    padding: 48px 24px; /* Espaçamento interno */
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carros h1 {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: normal;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 96px;
+    width: 100%;
+    margin-bottom: 24px;
+
+  }
+  
+  .carros .item {
+    display: flex; /* Define o elemento como flexbox */
+    flex-direction:column; /* Define a direção da flexbox como coluna */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-bottom: 24px; /* Define a margem inferior */
+    width: 100%; /* Largura do item */
+    flex: 1 0 300px;
+    margin-bottom: 24px;
+  }
+  
+  .carros .item img {
+    width: 90%; /* Define a largura da imagem como 100% */
+    height: 150px; /* Define a altura da imagem */
+    object-fit: cover; /* Define o ajuste da imagem para cobrir toda a área */
+    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .carros .item h3 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 16px; /* Define a margem inferior */
+  }
+  
+  .carros .item p {
+    font-size: 1rem; /* Tamanho da fonte */
+  }
+  
+  /* Estilos para a seção de callouts */
+  
+  .callouts {
+    background-color: #fafafa;
+    text-align: center;
+  }
+
+  .callouts h2 {
+    text-align: center;
+    font-size:32px;
+    margin-bottom: 100px;
+  }
+
+  .callouts .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .callouts .item img {
+    width: 1231px;
+    height: 693px;
+    
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+  .callouts .item p {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #2a609d; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 24px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento de texto ao centro */
+  }
+  
+  footer p {
+    font-size: 0.875rem; /* Tamanho da fonte */
+  }
